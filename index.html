@@ -9,12 +9,14 @@
     <h3>HTML code</h3>
     <button onclick="run()">Run</button>
     <textarea id="html_code"></textarea>
+    <p id="output"></p>
   </body>
   <script>
     function run() {
       var htmlCode = document.getElementById("html_code").value;
+      var output = document.getElementById("output");
       document.cookie = "html_code=" + htmlCode;
-      alert(getCookie("html_code"));
+      output.innerHTML = getCookie("html_code");
     }
     
 function getCookie(cname) {

@@ -12,7 +12,8 @@
   </body>
   <script>
     function run() {
-      document.cookie = "html_code=John Doe";
+      var htmlCode = document.getElementById("html_code").value;
+      document.cookie = "html_code=" + htmlCode;
       alert(getCookie("html_code"));
     }
     

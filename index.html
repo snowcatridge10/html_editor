@@ -7,9 +7,11 @@
     <br>
     <br>
     <h3>HTML code</h3>
-    <form action="" method="GET">
-      <button type="submit">Save & Run</button>
-      <textarea name="html_code"></textarea>
-    </form>
+    <button onclick="run()">Run</button>
+    <textarea id="html_code"></textarea>
   </body>
+  <script>
+    function run() {
+      document.cookie = "html_code=John Doe";
+    }
 </html>
